@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<title></title>
+</head>
+<body>
+	<h1>my favorite food </h1>
+	
+
+	{% if no_food %}
+		<p> I dont love these food!  </p>
+	{% else %}
+	   	<p> i love these food </p>
+	{% endif %}
+		<li> {{food}} </li>
+
+</body>
+</html><!-- Put the HTML template for your page here! -->
