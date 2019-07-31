@@ -7,14 +7,14 @@
 <body>
 	<h1>my favorite food </h1>
 
-
+<br>
 	{% if no_food %}
 		<p> I dont love these food!  </p>
 	{% else %}
 	   	<p> i love these food </p>
 	{% endif %}
 		<li> {{food}} </li>
-
+</br>
 	<img src="{{ url_for('static', filename='pizza.jpg') }}" width="300" height="250">
 
 	<img src="{{ url_for('static', filename='mujadra.jpg') }}" width="300" height="250">
